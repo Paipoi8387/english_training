@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <form action="english1.html">
+        <input type="submit" value="中学一年生">
+    </form>
+    <form action="english3.html">
+        <input type="submit" value="中学三年生">
+    </form>
+    <form name="js">
+        <p>答え合わせをするときは右の辞書を参考にしてね</p>
+        <div style="position:absolute; top:30px; left:650px;">
+            <p id="dictionary"><input type="button" name="dictionary_on" value="辞書を非表示" onClick="dictionary_off()"></p>
+            <p id="text_area"><textarea id="input_text" name="output" cols="40" rows="30"></textarea></p>
+        </div>
+    </form>
+    <div style="position:absolute; top:200px; left:30px;">
+        <h1 id="eng"></h1>
+    </div>
+    <div style="position:absolute; top:235px; left:300px;">
+        <input type="button" value="次の問題へ" onclick="change_word()">
+    </div>
+    <div style="position:absolute; top:280px; left:500px;">
+        <h2 id="eng1"></h2>
+    </div>
+    <div style="position:absolute; top:280px; left:60px;">
+        <h2 id="jpa1"></h2>
+    </div>
+    <div style="position:absolute; top:290px; left:10px;">
+        <p id="zero"><input type="button" name="text-button0" value="選択" onClick="judge_right_zero()"></p>
+    </div>
+    <div style="position:absolute; top:320px; left:500px;">
+        <h2 id="eng2"></h2>
+    </div>
+    <div style="position:absolute; top:320px; left:60px;">
+        <h2 id="jpa2"></h2>
+    </div>
+    <div style="position:absolute; top:330px; left:10px;">
+        <p id="one"><input type="button" name="text-button1" value="選択" onClick="judge_right_one()"></p>
+    </div>
+    <div style="position:absolute; top:360px; left:500px;">
+        <h2 id="eng3"></h2>
+    </div>
+    <div style="position:absolute; top:360px; left:60px;">
+        <h2 id="jpa3"></h2>
+    </div>
+    <div style="position:absolute; top:370px; left:10px;">
+        <p id="two"><input type="button" name="text-button2" value="選択" onClick="judge_right_two()"></p>
+    </div>
+    <div style="position:absolute; top:100px; left:150px;">
+        <p id="right_wrong"><font size="7" color="red"></font></p>
+    </div>
+    <script type="text/javascript" src="english2.js"></script>
+</body>
+</html>
